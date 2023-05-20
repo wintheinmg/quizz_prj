@@ -1,0 +1,207 @@
+/* layout */
+.content-wrapper {
+    justify-content: start !important;
+    overflow: hidden !important;
+}
+
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 1rem !important;
+}
+
+.price-right{
+    text-align: right;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.fc-daygrid-event-harness,.fc-timegrid-event-harness-inset .fc-timegrid-event{
+    border-left: 3px solid #5a8dee;
+    background-color: #e5edfc !important;
+    color: #5a8dee !important;
+    border-radius: 0.25rem;
+}
+
+.custom-header{
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 10px 15px 0px 15px !important;
+}
+
+#searchFilter {
+    z-index: 1111;
+    position: absolute;
+    top: -1px;
+    width: 97%;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+
+.bg-blur {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  .numberCircle {
+    float: left;
+    font-size: 10px;
+    position: relative;
+    color: #39da8a;
+    border: 1px solid #39da8a;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+/* The container */
+.radio-container {
+  display: block;
+  position: relative;
+  /* padding-left: 5%; */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom: 3px solid #eee;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #5a8dee;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-row{
+  margin-top: 15px;
+    margin-left: 1.7%;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.dans-avatar{
+  padding: 8px;
+  background-color:#e5edfc ;
+  border-radius: 50%;
+}
+
+.dans-avatar i{
+  margin-bottom: 2.5px;
+}
+
+.gprev,.gnext{
+  display: none;
+}
+
+.questionimg{
+  /* width: fit-content; */
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  justify-content: center;
+  
+}
+.questionbox-lightbox img{
+  width: 90%;
+}
+/* test resul question and question option */
+/* .radio-row{
+  margin-top: 15px;
+  margin-left: 1.7%;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+.radio-container{
+  display: block;
+  position: relative;
+  /* padding-left: 5%; */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkmark{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+}
+.bg-success{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-danger{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-primary{
+  --bs-bg-opacity: 1;
+  background-color: #5a8dee !important;
+} */
